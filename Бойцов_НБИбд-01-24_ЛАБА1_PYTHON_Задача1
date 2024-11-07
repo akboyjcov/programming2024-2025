@@ -1,0 +1,14 @@
+import math
+
+a = float(input("Введите длину большего основания трапеции (a): "))
+b = float(input("Введите длину меньшего основания трапеции (b): "))
+h = float(input("Введите угол при большем основании в градусах: "))
+c = math.sqrt(h**2 + ((a - b) / 2)**2)
+perimeter = a + b + 2 * c
+area = ((a + b) / 2) * h
+angle_bottom = 180 - h
+angle_side = ((b / 2) / c)
+print(h)
+print("Периметр трапеции:", perimeter)
+print("Площадь трапеции:", area)
+print("Угол при меньшем основании:", (angle_bottom), "градусов")
