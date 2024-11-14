@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  double a, b, c, D;
+  cout << "Введите коэффициенты a, b, c: ";
+  cin >> a >> b >> c;
+
+  D = b * b - 4 * a * c;
+
+  if (D > 0) {
+	cout << "Уравнение имеет два вещественных корня" << endl;
+  } else if (D == 0) {
+    cout << "Уравнение имеет один вещественный корень" << endl;
+  } else {
+    cout << "Уравнение не имеет вещественных корней" << endl;
+  }
+
+  return 0;
+}
