@@ -1,0 +1,17 @@
+def last_digit_of_square(last_digit):
+
+  if not 0 <= last_digit <= 9:
+    return None
+  return (last_digit ** 2) % 10
+
+print(f"Последняя цифра квадрата числа, оканчивающегося на 0: {last_digit_of_square(0)}")
+print(f"Последняя цифра квадрата числа, оканчивающегося на 1: {last_digit_of_square(1)}")
+print(f"Последняя цифра квадрата числа, оканчивающегося на 2: {last_digit_of_square(2)}")
+print(f"Последняя цифра квадрата числа, оканчивающегося на 3: {last_digit_of_square(3)}")
+print(f"Последняя цифра квадрата числа, оканчивающегося на 4: {last_digit_of_square(4)}")
+print(f"Последняя цифра квадрата числа, оканчивающегося на 5: {last_digit_of_square(5)}")
+print(f"Последняя цифра квадрата числа, оканчивающегося на 6: {last_digit_of_square(6)}")
+print(f"Последняя цифра квадрата числа, оканчивающегося на 7: {last_digit_of_square(7)}")
+print(f"Последняя цифра квадрата числа, оканчивающегося на 8: {last_digit_of_square(8)}")
+print(f"Последняя цифра квадрата числа, оканчивающегося на 9: {last_digit_of_square(9)}")
+print(f"Последняя цифра квадрата числа, оканчивающегося на 12: {last_digit_of_square(12)}")
