@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+  double r1, r2, area;
+
+  printf("Введите внутренний радиус R1: ");
+  if (scanf("%lf", &r1) != 1 || r1 <= 0) {
+    printf("Ошибка ввода внутреннего радиуса.\n");
+    return 1;
+  }
+
+  printf("Введите внешний радиус R2: ");
+  if (scanf("%lf", &r2) != 1 || r2 <= 0 || r2 <= r1) {
+    printf("Ошибка ввода внешнего радиуса (должен быть больше R1 и больше 0).\n");
+    return 1;
+  }
+
+  // Вычисление площади кольца
+  area = M_PI * (r2 * r2 - r1 * r1);
+
+  printf("Площадь кольца: %.2lf\n", area); 
+  return 0; 
+}
