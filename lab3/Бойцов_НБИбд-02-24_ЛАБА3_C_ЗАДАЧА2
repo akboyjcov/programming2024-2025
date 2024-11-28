@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+  int zone_number;
+  float cost;
+
+  printf("Введите номер тарифной зоны (1-6): ");
+  scanf("%d", &zone_number);
+
+if (zone_number < 1 || zone_number > 6) {
+    printf("Некорректный номер тарифной зоны.\n");
+    return 1; 
+  }
+
+  switch (zone_number) {
+    case 1:
+      cost = 1.5;
+      break;
+    case 2:
+      cost = 2.0;
+      break;
+    case 3:
+      cost = 2.5;
+      break;
+    case 4:
+      cost = 3.0;
+      break;
+    case 5:
+      cost = 3.5;
+      break;
+    case 6:
+      cost = 4.0;
+      break;
+  }
+
+  printf("Стоимость минуты разговора в зоне %d: %.2f руб.\n", zone_number, cost);
+  return 0;
+}
