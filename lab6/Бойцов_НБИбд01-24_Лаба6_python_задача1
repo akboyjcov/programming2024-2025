@@ -1,0 +1,25 @@
+import math
+
+def points_in_circle(n, a, b, r):
+
+    count = 0
+    for i in range(n):
+        x = float(input(f"Введите координату x для точки {i+1}: "))
+        y = float(input(f"Введите координату y для точки {i+1}: "))
+
+        distance = math.sqrt((x - a)**2 + (y - b)**2)
+        if distance <= r:
+            count += 1
+
+    return count
+
+if __name__ == "__main__":
+    n = int(input("Введите количество точек (n): "))
+    a = float(input("Введите координату x центра круга (a): "))
+    b = float(input("Введите координату y центра круга (b): "))
+    r = float(input("Введите радиус круга (r): "))
+
+    inside_count = points_in_circle(n, a, b, r)
+    print(f"Количество точек внутри круга: {inside_count}")
+
+
