@@ -1,0 +1,18 @@
+n = int(input("Введите количество элементов массива: "))
+array = []
+
+print("Введите элементы массива:")
+for _ in range(n):
+    array.append(int(input()))
+
+positive_count = 0
+negative_count = 0
+
+for number in array:
+    if number > 0:
+        positive_count += 1
+    elif number < 0:
+        negative_count += 1
+
+print(f"Количество положительных элементов: {positive_count}")
+print(f"Количество отрицательных элементов: {negative_count}")
